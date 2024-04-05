@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function Palindrome() {
+       var r,rev=0,n,copy;
+        n = parseInt(prompt("enter a number:"));
+	copy=n;
+        while (n != 0) {
+          r = n % 10;
+          rev = rev * 10 + r;
+          n = parseInt(n / 10);
+        }
+	if(copy==rev)
+	{
+           document.write(copy+" is palindrome a number");
+	}
+	else
+	{
+	   document.write(copy+" is not palindrome a number");
+	}
+      }
+    </script>
+    <form>
+      <input type="button" value="Palindrome" onclick="Palindrome();" />
+    </form>
+  </body>
+</html>
+ 
